@@ -10,13 +10,24 @@
             <%= heading %>
         </h1>
 
-        <p>
-            <% for(i of nums) {%>
-            <p>
-                <%= i %>
-            </p>
-            <% }%>
-        </p>
+        <form action="" method="POST">
+            <div>
+                <textarea name="task-description" id="task-description" placeholder="description" ></textarea>
+            </div>
+            <div>
+                
+                <select name="category" id="category" placeholder="Personal">
+                    <option value="personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="School">School</option>
+                    <option value="Cleaning">Ceaning</option>
+                    <option value="Other">Other</option>
+
+                </select>
+                <input type="date" name="" id="">
+            </div>
+        </form>
+     
     </body>
 
 

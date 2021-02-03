@@ -4,21 +4,17 @@ const app = express();
 
 const arr = [1,2,3,4,5];
 
-// app.use('/' , require('./routes'));
+
 
 //set up the view engine
 app.set("view engine" , "ejs");
 app.set("views" , './views');
 
 
+app.use(express.static('assets'));
 
-app.get('/' , module.exports.home = function(req,res){
-    return res.render( "home" , {
-        title:"TO DO APP",
-        heading : "TO DO APP",
-        nums : arr
-    });
-})
+app.use('/' , require('./routes'));
+
 
 app.listen(port , function(err){
     if(err){
