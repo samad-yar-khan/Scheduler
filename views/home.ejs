@@ -4,30 +4,74 @@
         <title>
             <%= title %>
         </title>
+        <script src="https://kit.fontawesome.com/2fb3dac3d3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/home.css">
     </head>
     <body>  
-        <h1>
-            <%= heading %>
-        </h1>
 
-        <form action="" method="POST">
-            <div>
-                <textarea name="task-description" id="task-description" placeholder="description" ></textarea>
-            </div>
-            <div>
+        <main class="main-card">
+        
+            <h1 class="card-header">
+                <%= heading %>
+            </h1>
+
+            <form action="" method="POST" id="form1">
+
+                <div class="task-description-wrapper input-wrapper">
+                    <label for="task-description">DESCRIPTION</label>
+                    <textarea name="task-description" id="task-description" placeholder="What Do You Need To Do ?" rows="2" ></textarea>
+                </div>
+
+                <div class="date-category-super-wrapper">
+                    
+                    <div class="input-wrapper category-wrapper" >
+                        <label for="category">CATEGOORY</label>
+                        <select name="category" id="category" placeholder="Personal">
+                            <option value="Personal" class="options">Personal</option>
+                            <option value="Work">Work</option>
+                            <option value="School">School</option>
+                            <option value="Cleaning">Ceaning</option>
+                            <option value="Other">Other</option>
+
+                        </select>
+                    </div>
+                    <div class="input-wrapper due-date-wrapper ">
+                        <label for="due-date">DUE DATE</label>
+                        <input type="date" name="due-date" id="due-date" id="input-date">
+                    </div>
+
+                   
+                </div>
+        
+            </form>
+            <div class="buttons-container">
                 
-                <select name="category" id="category" placeholder="Personal">
-                    <option value="personal">Personal</option>
-                    <option value="Work">Work</option>
-                    <option value="School">School</option>
-                    <option value="Cleaning">Ceaning</option>
-                    <option value="Other">Other</option>
-
-                </select>
-                <input type="date" name="" id="">
+                    <input type="submit" class="buttons  grey" form="form1" value="+ ADD" >
+                    <input type="submit" class="buttons  red" form="form2" value="- DELETE" >
+                
             </div>
-        </form>
-     
+            <form action="" method="POST" id="form2">
+                <% for(let task of toDoList ) {%>
+                <div class="task-card">
+                    <input type="checkbox" id="<%= task.id %>" name="<%= task.id %>" value="<%= task.id %>">
+                    <label for="<%= task.id %>"  class="task-card-info">
+                       
+                            <div class="task-card-desc-date">
+                                <div><%= task.desc %></div>
+                                <div class="date-info">
+                                    <i class="fas fa-calendar-alt"></i><span>&nbsp <%= task.date.day%> <%= task.date.month %>  , <%= task.date.year %> </span>
+                                </div>
+                            </div>
+                            <div class="task-card-category">
+                                <%= task.category %>
+                            </div>
+                       
+                    </label>
+                </div>
+                <% } %>
+            </form>
+
+        </main>
     </body>
 
 

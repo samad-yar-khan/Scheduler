@@ -1,0 +1,188 @@
+
+
+body{
+    margin: 0;
+    background-color: rgb(34, 40, 51);
+    color: rgb(106, 101, 101);
+    font-family: monospace;
+    min-height: 1vh;
+    min-width: 1vw;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    --grey-color : rgb(106, 101, 101);
+}
+
+.hidden{
+    display: none;
+}
+
+/* style for the main card */
+
+.main-card{
+    position: relative;
+    min-width: 500px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border: 0px solid ;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header{
+    margin:10px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+   
+}
+/* 
+style for all the input wrappers  */
+.input-wrapper{
+
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    border-bottom: 1px solid rgb(106, 101, 101);;
+    width: 100%;
+    padding: 5px 15px;
+}
+
+.input-wrapper label{
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+.input-wrapper input{
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    
+}
+
+.input-wrapper textarea{
+    
+    border: none;
+    outline: none;
+    width : 90%;
+    font-size: 1.1rem;
+}
+
+/* wrapper for the task description area */
+.task-description-wrapper{
+    border-top: 1px solid rgb(106, 101, 101);
+    width: 100%;
+} 
+
+/* wrapper for the date and category area */
+.date-category-super-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+/*wraper for the category area*/
+.category-wrapper{
+    border-right: 1px solid rgb(106, 101, 101);
+}
+
+.category-wrapper select{
+
+    width : 95%;
+    font-size: 1rem;
+    min-height: 2rem;
+    border: none;
+    outline: none;
+}
+
+.category-wrapper option{
+    height: 1.5rem;
+    font-size: 1.1rem;
+    background-color: rgb(82, 74, 74);
+    color: cornsilk;
+}
+
+/*buttons area*/
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    border-bottom: 1px solid rgb(106, 101, 101);
+}
+
+.buttons{
+    height: 50px;
+    min-width: 120px;
+    border-radius: 4px;
+    position: relative;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+.grey{
+    background-color: var(--grey-color);
+}
+
+.red{
+    background-color: rgb(233, 35, 0);
+}
+
+/******TO DO LIST MAIN******/
+
+/* list card */
+
+.task-card{
+    font-size:1rem;
+    margin: auto;
+    position: relative;
+    width: 99%;
+    display: flex;
+    justify-content: flex-start;
+align-items: center;
+    height: 70px;
+    margin: 2px;
+    border: rgb(170, 161, 248)  solid 1px;
+}
+
+/* the part containing the information of the task - date , desx , type */
+.task-card-info{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* style of the desc of task and the date on the left */
+.task-card-desc-date{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top:7px;
+    
+}
+
+/* styling the date */
+.task-card .date-info{
+    position: relative;
+    top:5px;
+    font-size: 0.8rem;
+}
+
+.task-card-category{
+    display: flex;
+    align-items:center ;
+    justify-content : center;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    border:2px solid var(--grey-color);
+}
