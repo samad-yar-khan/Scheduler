@@ -53,8 +53,8 @@
             <form action="edit/del" method="POST" id="form2">
                 <% for(let task of toDoList ) {%>
                 <div class="task-card">
-                    <input type="checkbox" id="<%= task.id %>" name="<%= task.id %>" value="<%= task.id %>">
-                    <label for="<%= task.id %>"  class="task-card-info">
+                    <input type="checkbox" id="<%= task._id %>" name="<%= task._id %>" value="<%= task._id %>">
+                    <label for="<%= task._id %>"  class="task-card-info">
                        
                             <div class="task-card-desc-date">
                                 <div><%= task.desc %></div>

@@ -55,8 +55,21 @@ module.exports.addTask = function(req , res){
 }
 
 module.exports.deleteTask = function(req , res){
+    
 
-    console.log("del");
-    return res.redirect('/');
+    var taskDelList = req.body;
+
+    for(id in taskDelList){
+        console.log(id);
+        Task.findByIdAndDelete(id , function (err , delT) {
+            if(err){
+                console.log("ERRO DELETING CONTACT!");
+                return;
+            }else{
+                console.log("DELTED TASK \n",delT);
+                return res.redirect('/');
+            }
+        })
+    }
 
 }
