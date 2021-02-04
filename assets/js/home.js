@@ -3,11 +3,11 @@ var taskList = document.querySelectorAll(".task-card");
 var categoryList = document.querySelectorAll(".task-card-category");
 
 let categoryColor = {
-    "Work" : "blue" ,
-    "School" : "green" ,
-    "Personal" : "gray" ,
-    "Cleaning" :"cyan",
-    "Other" : "orange"
+    "Work" : "#D82626" ,
+    "School" : "#D99109 " ,
+    "Personal" : "#0FA416 " ,
+    "Cleaning" :"#13AA6E",
+    "Other" : "#161176"
 } ;
 
 //add color to whichevr input area is cicked

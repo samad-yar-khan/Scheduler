@@ -22,6 +22,8 @@ function getDate(theDate){
 
 module.exports.addTask = function(req , res){
 
+
+
     let descr = req.body['task-description'];
     console.log(descr);
     let cat = req.body.category;
@@ -58,7 +60,9 @@ module.exports.deleteTask = function(req , res){
     
 
     var taskDelList = req.body;
-
+    if(Object.keys(taskDelList).length === 0 && taskDelList.constructor === Object){
+        return res.redirect('/');
+    }
     for(id in taskDelList){
         console.log(id);
         Task.findByIdAndDelete(id , function (err , delT) {

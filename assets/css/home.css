@@ -37,7 +37,9 @@ body{
     margin:10px 0px;
     width: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: var(--grey-color);
+  
    
 }
 /* 
@@ -145,7 +147,7 @@ style for all the input wrappers  */
 }
 
 .red{
-    background-color: rgb(233, 35, 0);
+    background-color: rgb(255, 75, 43);
 }
 
 /******TO DO LIST MAIN******/
@@ -163,7 +165,7 @@ style for all the input wrappers  */
     align-items: center;
     height: 70px;
     margin: 2px;
-    border: rgb(170, 161, 248)  solid 1px;
+    border-bottom: rgb(170, 161, 248)  solid 1px;
     cursor: pointer;
 }
 
@@ -208,6 +210,6 @@ style for all the input wrappers  */
     height: 30px;
     width: 100px;
     border-radius: 4px;
-    border:2px solid var(--grey-color);
+    border:2px transparent ;
 }
 
