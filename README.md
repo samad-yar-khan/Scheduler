@@ -19,10 +19,10 @@ This is an application which helps people in keeping track of the various task w
 <img src = "assets/images/app_ss/delete task.PNG" height="300px" >
 <img src = "/assets/images/app_ss/delted_task.PNG" height="300px" >
 
-##Technologies Used
-## Front End
+## Technologies Used
+#### Front End
 >The Front-End of the app is made on VanillaJS , no front-end framework have been used .
-## Back End
+#### Back End
 >The Back-End sever is made on NodeJS using Express framework . Mongo DB has been used as the date base and the Mongoose ODM has been used to communicate/make changes to the Data Base.
 
 ## Project Setup
