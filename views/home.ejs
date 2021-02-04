@@ -15,7 +15,7 @@
                 <%= heading %>
             </h1>
 
-            <form action="" method="POST" id="form1">
+            <form action="/edit/add" method="POST" id="form1">
 
                 <div class="task-description-wrapper input-wrapper">
                     <label for="task-description">DESCRIPTION</label>
@@ -50,7 +50,7 @@
                     <input type="submit" class="buttons  red" form="form2" value="- DELETE" >
                 
             </div>
-            <form action="" method="POST" id="form2">
+            <form action="edit/del" method="POST" id="form2">
                 <% for(let task of toDoList ) {%>
                 <div class="task-card">
                     <input type="checkbox" id="<%= task.id %>" name="<%= task.id %>" value="<%= task.id %>">

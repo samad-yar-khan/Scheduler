@@ -5,6 +5,7 @@ const app = express();
 const arr = [1,2,3,4,5];
 
 
+app.use(express.urlencoded({extended: true}));
 
 //set up the view engine
 app.set("view engine" , "ejs");
