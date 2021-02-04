@@ -52,16 +52,21 @@ style for all the input wrappers  */
     padding: 5px 15px;
 }
 
+
+
 .input-wrapper label{
     font-weight: 600;
     margin: 10px 0;
     font-size: 1.3rem;
+  
 }
 
 .input-wrapper input{
     border: none;
     outline: none;
     font-size: 1.1rem;
+    background-color: inherit;
+    
     
 }
 
@@ -71,6 +76,12 @@ style for all the input wrappers  */
     outline: none;
     width : 90%;
     font-size: 1.1rem;
+    background-color: inherit;
+}
+
+/* class aplied when an input area is focused */
+.focus{
+    background-color: rgb(199, 208, 225);
 }
 
 /* wrapper for the task description area */
@@ -85,6 +96,7 @@ style for all the input wrappers  */
     display: flex;
     flex-direction: row;
 }
+
 /*wraper for the category area*/
 .category-wrapper{
     border-right: 1px solid rgb(106, 101, 101);
@@ -92,11 +104,13 @@ style for all the input wrappers  */
 
 .category-wrapper select{
 
+    background-color: inherit;
     width : 95%;
     font-size: 1rem;
     min-height: 2rem;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .category-wrapper option{
@@ -137,6 +151,8 @@ style for all the input wrappers  */
 /******TO DO LIST MAIN******/
 
 /* list card */
+    color: tomato;
+}
 
 .task-card{
     font-size:1rem;
@@ -145,10 +161,17 @@ style for all the input wrappers  */
     width: 99%;
     display: flex;
     justify-content: flex-start;
-align-items: center;
+    align-items: center;
     height: 70px;
     margin: 2px;
     border: rgb(170, 161, 248)  solid 1px;
+    cursor: pointer;
+}
+
+/* add this class when a task is selected */
+.delete-highlight{
+    background-color: rgb(242, 84, 84);
+    color: whitesmoke;
 }
 
 /* the part containing the information of the task - date , desx , type */
@@ -159,6 +182,7 @@ align-items: center;
     align-items: center;
     width: 100%;
     padding: 10px;
+    cursor: pointer;
 }
 
 /* style of the desc of task and the date on the left */
@@ -179,6 +203,7 @@ align-items: center;
 
 .task-card-category{
     display: flex;
+    color: white;
     align-items:center ;
     justify-content : center;
     height: 30px;
@@ -186,3 +211,4 @@ align-items: center;
     border-radius: 4px;
     border:2px solid var(--grey-color);
 }
+
