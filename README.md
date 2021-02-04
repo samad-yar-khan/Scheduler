@@ -8,20 +8,22 @@ This is an application which helps people in keeping track of the various task w
 ## Functionality
 
 #### Adding Tasks
-Tasks can be added to the task list by filling up the task description , date for the sepecified task , category and then clicking on the add button.
+>Tasks can be added to the task list by filling up the task description , date for the sepecified task , category and then clicking on the add button.
+
 <img src = "assets/images/app_ss/Add _ask.PNG" height="300px" >
 <img src = "/assets/images/app_ss/added_task.PNG" height="300px" >
 
 #### Deleting Tasks
-After the completion of tasks , then can be delted .Multiple tasks can be selected at once and deleted using the delete button.
+>After the completion of tasks , then can be delted .Multiple tasks can be selected at once and deleted using the delete button.
+
 <img src = "assets/images/app_ss/delete task.PNG" height="300px" >
 <img src = "/assets/images/app_ss/delted_task.PNG" height="300px" >
 
 ##Technologies Used
 ## Front End
-The Front-End of the app is made on VanillaJS , no front-end framework have been used .
+>The Front-End of the app is made on VanillaJS , no front-end framework have been used .
 ## Back End
-The Back-End sever is made on NodeJS using Express framework . Mongo DB has been used as the date base and the Mongoose ODM has been used to communicate/make changes to the Data Base.
+>The Back-End sever is made on NodeJS using Express framework . Mongo DB has been used as the date base and the Mongoose ODM has been used to communicate/make changes to the Data Base.
 
 ## Project Setup
 
