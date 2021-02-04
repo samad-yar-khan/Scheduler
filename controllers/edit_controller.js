@@ -1,6 +1,6 @@
-const express = require('express');
+
 const db = require('../configs/mongoose');
-const Contact  = require('../models/task');
+const Task  = require('../models/task');
 let months = ["JAN" ,"FEB" ,"MAR","APR" ,"MAY" , "JUNE" , "JUL" , "SEPT" , "OCT" ,"NOV" , "DEC"];
 
 function getDate(theDate){
@@ -36,7 +36,7 @@ module.exports.addTask = function(req , res){
         year : Y
     }
 
-    Contact.create({
+    Task.create({
         desc : descr ,
         category : cat ,
         date : dateOBJ
