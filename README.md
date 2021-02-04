@@ -23,7 +23,7 @@ This is an application which helps people in keeping track of the various task w
 #### Front End
 >The Front-End of the app is made on VanillaJS , no front-end framework have been used .
 #### Back End
->The Back-End sever is made on NodeJS using Express framework . Mongo DB has been used as the date base and the Mongoose ODM has been used to communicate/make changes to the Data Base.
+>The Back-End sever is made on NodeJS using Express framework . Mongo DB has been used as the date base and the Mongoose ODM has been used to communicate/make changes to the Data Base. EJS has been used as the view engine to add variable data to the webpages.
 
 ## Project Setup
 
@@ -31,10 +31,11 @@ This is an application which helps people in keeping track of the various task w
 
 #### 1)Install NodeJS as the back-end is written on Node.
 #### 2)Install Express 
-#### 3)Install MongoDB
-#### 4)Install Mongoose 
-#### 5)Install Nodemon 
-#### 6)After reaching the project folder type the following command in the terminal - *npm start*
+#### 3)Install EJS
+#### 4)Install MongoDB
+#### 5)Install Mongoose 
+#### 6)Install Nodemon 
+#### 7)After reaching the project folder type the following command in the terminal - *npm start*
 
 
 
