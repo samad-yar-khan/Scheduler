@@ -1,4 +1,4 @@
-# ToDoAPP
+# Scheduler
 
 
 This is an application which helps people in keeping track of the various task which they have to do in the coming days .
