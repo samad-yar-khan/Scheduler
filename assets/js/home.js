@@ -26,17 +26,19 @@ for(let i = 0 ; i < inputFeild.length ; i++){
     });
 }
 
-// for(let i = 0 ; i < taskList.length ; i++){
-//     taskList[i].addEventListener('click' , function(event){
+for(let i = 0 ; i < taskList.length ; i++){
+        console.log(taskList[i]);
+    taskList[i].addEventListener('click' , function(event){
 
       
-//         console.log(taskList[i]);
-//         taskList[i].classList.toggle('delete-highlight');
-//         event.stopPropagation();
+        console.log(taskList[i]);        
+        event.stopPropagation();
+        taskList[i].classList.toggle('delete-highlight');
+        event.stopPropagation();
         
 
-//     });
-// }
+    });
+}
 
 //color the tasks
 

@@ -140,6 +140,7 @@ style for all the input wrappers  */
     color: whitesmoke;
     font-size: 1.2rem;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .grey{
@@ -147,9 +148,12 @@ style for all the input wrappers  */
 }
 
 .red{
-    background-color: rgb(255, 75, 43);
+    background-color: rgb(230, 17, 17);
 }
 
+.blue{
+    background-color:rgb(9, 175, 252) ;
+}
 /******TO DO LIST MAIN******/
 
 /* list card */

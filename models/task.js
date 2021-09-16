@@ -22,7 +22,12 @@ const taskSchema = new mongoose.Schema({
             type:String,
          
         }
+    },
+    isComplete : {
+        type : Boolean,
+        required : true
     }
+
 });
 
 //now we turn then scema into a model

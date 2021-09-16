@@ -22,8 +22,6 @@ function getDate(theDate){
 
 module.exports.addTask = function(req , res){
 
-
-
     let descr = req.body['task-description'];
     console.log(descr);
     let cat = req.body.category;
@@ -41,8 +39,8 @@ module.exports.addTask = function(req , res){
     Task.create({
         desc : descr ,
         category : cat ,
-        date : dateOBJ
-        
+        date : dateOBJ,
+        isComplete: false
     } , function(err , newTASK){
         if(err){
             console.log(err);
@@ -58,7 +56,6 @@ module.exports.addTask = function(req , res){
 
 module.exports.deleteTask = function(req , res){
     
-
     var taskDelList = req.body;
     if(Object.keys(taskDelList).length === 0 && taskDelList.constructor === Object){
         return res.redirect('/');

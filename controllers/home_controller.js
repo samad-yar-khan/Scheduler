@@ -7,12 +7,12 @@ module.exports.home = function(req , res){
 
     Task.find({}, function (err , tasks) {
         if(err){
-            console.log("Error diplaying contacts " ,err);
+            console.log("Error diplaying tasks" ,err);
             return;
         }else{
             return res.render( "home" , {
-                title:"TO DO APP",
-                heading : "Task Desk",
+                title:"Scheduler",
+                heading : "Scheduler",
                 toDoList : tasks
             });
         }
