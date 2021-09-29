@@ -1,6 +1,7 @@
 var inputFeild = document.querySelectorAll(".input-wrapper");
 var taskList = document.querySelectorAll(".task-card");
 var categoryList = document.querySelectorAll(".task-card-category");
+var labels = document.querySelectorAll(".task-card-info");
 
 let categoryColor = {
     "Work" : "#D82626" ,
@@ -26,19 +27,22 @@ for(let i = 0 ; i < inputFeild.length ; i++){
     });
 }
 
-for(let i = 0 ; i < taskList.length ; i++){
-        console.log(taskList[i]);
-    taskList[i].addEventListener('click' , function(event){
-
-      
-        console.log(taskList[i]);        
+//stop label from prppogarting click to parent
+for(let i = 0 ; i < labels.length ; i++){
+    labels[i].addEventListener('click' , function(event){  
         event.stopPropagation();
-        taskList[i].classList.toggle('delete-highlight');
-        event.stopPropagation();
-        
-
     });
 }
+
+
+//make slecte items red
+for(let i = 0 ; i < taskList.length ; i++){
+    taskList[i].addEventListener('click' , function(event){
+        taskList[i].classList.toggle('delete-highlight');
+    });
+}
+
+
 
 //color the tasks
 
