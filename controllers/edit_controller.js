@@ -57,6 +57,7 @@ module.exports.addTask = function(req , res){
 module.exports.deleteTask = function(req , res){
     
     var taskDelList = req.body;
+    console.log(taskDelList);
     if(Object.keys(taskDelList).length === 0 && taskDelList.constructor === Object){
         return res.redirect('/');
     }
@@ -68,9 +69,9 @@ module.exports.deleteTask = function(req , res){
                 return;
             }else{
                 console.log("DELTED TASK \n",delT);
-                return res.redirect('/');
             }
         })
     }
+    return res.redirect('/');
 
 }

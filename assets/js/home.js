@@ -45,14 +45,11 @@ for(let i = 0 ; i < taskList.length ; i++){
 
 
 //color the tasks
-
 for(item of categoryList ){
     var color = item.innerText;
     var key ="";
     key+=color;
-
     item.style.backgroundColor = categoryColor[key] ; 
-
 }
 
 
